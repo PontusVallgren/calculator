@@ -1,0 +1,48 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+#grid-container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    border: 2px black solid;
+    background-color: gray;
+    border-radius: 5px;
+    height: 400px;
+    width: 400px;
+}
+
+#display {
+    grid-column: 1 / 5;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 45px;
+    padding-right: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 7px;
+}
+#clear  {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    background-color: rgba(154, 154, 240, 0.568);
+    border: 2px black solid;
+}
+#delete {
+    grid-row: 2 / 3;
+    grid-column: 3 / 5;
+    background-color: rgba(255, 1, 52, 0.5);
+    border: 2px black solid;
+}
+.btn-operand, .btn-operate, #equal, #clear, #delete {
+    font-size: 25px;
+}
+button {
+    border-radius: 10px;
+    border: 2px black solid;
+    margin: 2px;
+    background-color: rgb(238, 238, 238);
+}
+
